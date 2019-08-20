@@ -1,9 +1,12 @@
 Ricardo Garcia, Marcus Tomaz, Rubens Nascimento, Hericlis Ventura e Ana Carolina.
 
 
-                                                                 Projeto – Vai descer
-    Esse projeto tem por objetivo controlar a entrada e saída de cada usuário da linha de determinada rota de ônibus, cada dado obtido é de extrema 
-    importância, a tecnologia usada para captar cada pessoa ou objeto que passe pelo sensor instalado na porta do ônibus, a ideia tem por objetivo influenciar o controle de fluxo e ajudar cada usuário a ter mais suporte sobre coisas que acontecem no transporte público, podendo dar opiniões, classificar cada rota ou motorista cadastrado naquela linha, sempre sedo mais seguro para ambos. 
+
+
+Projeto – Vai descer
+
+
+    Esse projeto tem por objetivo controlar a entrada e saída de cada usuário da linha de determinada rota de ônibus, cada dado obtido é registrado em um banco de dados, e upado em forma de informações para um site da web, gerando graficos e analises. A tecnologia usada para captar cada pessoa ou objeto que passe pelo sensor instalado na porta do ônibus, a ideia tem por objetivo influenciar o controle de fluxo e ajudar cada usuário a ter mais suporte sobre coisas que acontecem no transporte público, podendo dar opiniões, classificar cada rota ou motorista cadastrado naquela linha, sempre sedo mais seguro para ambos. 
 Aumentar com o passar dos anos – mercando crescendo – taxa de natalidade 
 A tecnologia envolvida é um arduíno , que através das informações obtidas, eu consigo calcular e
 quantidade de pessoas que entram e saem de determinada rota e por qual porta, com isso eu controlo a fiscalização,
