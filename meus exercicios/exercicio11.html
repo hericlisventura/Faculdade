@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vida do lutador</title>
+</head>
+<br><br>
+<br><br>
+<h1>Vida do lutador <b id="vida">1000</b></h1>
+
+<body>
+    <button id="soco" value="100" onclick="apanhar()">Apanhar</button>
+    <button id="melhorar" onclick="concentrar()">Concentrar forças</button>
+
+    <b id="situacao" style="display:none"></b>
+
+</body>
+
+</html>
+<script>
+    var vidaLutador = Number(1000)
+
+    function apanhar() {
+        
+        if (vidaLutador >= 0) {
+            vida.innerHTML += vidaLutador -100;
+            situacao.innerHTML = "Lutador está vivo"
+            situacao.style.display = "block"
+        } else {
+
+            situacao.innerHTML = "Lutador já era"
+
+            situacao.style.display = "block"
+        }
+
+    }
+</script>

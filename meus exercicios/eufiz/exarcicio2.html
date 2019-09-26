@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <Input placeholder="Digite sua idade" id="idade"></Input> 
+    <button onclick="veridade()">Ir para festa</button> <br>
+
+</body>
+
+<script>
+function veridade(){
+     var valorIdade = Number(idade.value);
+
+     if (valorIdade < 18){
+        alert(`Pedir permissão pro responsável, Sem chance!`)
+       
+         if (valorIdade < 15){
+
+            alert (`Sem chance vai estudar, Boa festa!`)
+         }
+         
+     }if (valorIdade => 18){
+         alert( `Boa Festa`)
+     
+     
+     }
+
+
+
+}
+
+</script>
+</html>

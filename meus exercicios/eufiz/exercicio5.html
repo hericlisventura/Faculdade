@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="economia" type="text" placeholder="Valor economizado">
+    <button onclick="verificar()">Poder de compra</button><br>
+
+    <div id="resultado"></div>
+</body>
+
+</html>
+<script>
+
+
+    function verificar() {
+        economia.innerHTML=""
+        var valorEconomia = Number = (economia.value);
+
+        if (valorEconomia <= 0) {
+            resultado.innerHTML = "Nada de compras! :("
+
+        } if (valorEconomia >=1) {
+            resultado.innerHTML = "Viagem de ida e Volta pra Praia Grande<br>"
+
+        } if (valorEconomia > 100) {
+            resultado.innerHTML += "Uma boa Moto usada<br>"
+
+        } if (valorEconomia >= 4000) {
+            resultado.innerHTML += "Uma bobagem legal<br>"
+        }
+
+
+    }
+
+</script>

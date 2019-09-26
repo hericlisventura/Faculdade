@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Situação financeira</h1>
+    <div>
+        <input id="saldo" type="text" placeholder="Digite seu Saldo Bancário">
+        <button onclick="situacao()">Verificar finanças</button>
+
+        <p id="positivo" style="display: none; color:blue;">Saldo Positivo! :) </p>
+        <p id="zerada" style="display:none; color: black;">Conta Zerada</p>
+        <p id="devendo" style="display:none;">Saldo negativo!</p>
+        <p id="negativo" style="display:none;color:red;">Igual ao Corinthias: No SERASA!</p>
+
+    </div>
+</body>
+
+</html>
+<script>
+    function situacao() {
+        negativo.style.display = 'none';
+        zerada.style.display = 'none';
+        devendo.style.display = 'none'
+        positivo.style.display = 'none';
+
+        var situacaoFinanceira = Number(saldo.value)
+
+        if (situacaoFinanceira > 0) {
+            positivo.style.display = 'block';
+        }
+        if (situacaoFinanceira == 0) {
+            zerada.style.display = 'block';
+
+        } if (situacaoFinanceira <= -1000) {
+            negativo.style.display = 'block';
+
+        } if (situacaoFinanceira < 0) {
+            devendo.style.display = 'block';
+        }
+            
+    }
+</script>
