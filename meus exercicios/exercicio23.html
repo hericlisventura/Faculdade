@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de Cansaço</h1>
+
+    <select name="" id="transportes">
+<option value="1">Onibus</option>
+<option value="2">Metrô</option>
+<option value="3">Carro</option>
+<option value="4">Bicicleta</option>
+<option value="5">Lotação</option>
+    </select>
+    <button onclick="calcular()">Calcular Cansaço</button>
+</body>
+</html>
+
+<script>
+function calcular(){
+    var MeioTP = Number(transportes.value)
+    if(MeioTP == 3 || MeioTP == 4){
+    alert('Ta Tranquilo!!')
+    }if(MeioTP == 2){
+        alert('Um pouco cansado!')
+    }if(MeioTP == 1 || MeioTP ==5){
+        alert('Vish ... Vive Cansado!')
+    }
+}
+</script>

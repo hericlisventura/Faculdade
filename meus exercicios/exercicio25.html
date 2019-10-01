@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculadora de cansaço aprimorada do aluno Bandtec.</h1>
+    <div class="form-group">
+        <label for=""></label>
+        <select multiple class="custom-select" name="" id="transportes">
+            <option value="">--Meio de Transporte</option>
+            <option value="1">Onibus</option>
+            <option value="2">Metrô</option>
+            <option value="3">Carro</option>
+            <option value="4">Bicicleta</option>
+        </select>
+        Distancia da faculdade(KM)
+        <input type="text" id="distancia">
+        <button onclick="calcular()">Calcular cansaço</button>
+    </div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var veiculos = (transportes.value);
+        var demora = (distancia.value);
+        if (demora == 10 && veiculos == 3 ||demora == 10 &&  veiculos == 2 || demora == 10 && veiculos == 1) {
+            alert('Ta Tranks!')
+
+        } if (demora > 10 && veiculos == 3) {
+            alert('É.. um pouco cansado');
+
+        } if (demora > 10 && veiculos == 2 ||demora > 10 && veiculos == 1) {
+            alert('Bem cansado!')
+        } if (demora > 10 && veiculos == 4) {
+            alert('Vish... Só o pó!')
+        }
+    }
+</script>

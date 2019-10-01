@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Processo Seletivo Mentes Brilhantes</title>
+</head>
+<body>
+    <h1>Processo Seletivo Mentes Brilhantes</h1>
+
+    Digite Sua Nota do ENEM : <input type="text" id="enem"><br>
+    Digite a Nota do Vestibular: <input type="text" id="vest"><br>
+    <button onclick="avaliar()">Avaliação</button>
+</body>
+</html>
+
+<script>
+function avaliar(){
+ var passar = Number(enem.value);
+ var aprovar = Number(vest.value);
+    if(passar>= 800 || aprovar >= 700){
+        alert(`Parabéns Aprovado!`);
+    }else{
+        alert(`Tente semestre que vem!`)
+    }
+}
+
+</script>

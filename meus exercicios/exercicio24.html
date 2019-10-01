@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de Alimentação</h1>
+    <div class="form-group">
+      <label for=""></label>
+      <select multiple class="form-control" name="" id="produtos">
+        <option value="1">Carne Bovina</option>
+        <option value="2">Soja</option>
+        <option value="3">Carne Suína</option>
+        <option value="4">Legumes</option>
+        <option value="5">Carne de Peixe</option>
+        <option value="6">Frutas</option>
+        <option value="7">Ovos</option>
+      </select>
+      <button onclick="tipos()">Tipo de Alimentação</button>
+    </div>
+</body>
+</html>
+<script>
+function tipos(){
+ var alimento = (produtos.value);
+
+ if(alimento == 1 || alimento ==7 || alimento == 3 ||alimento == 5){
+     alert('Você não pode ser Vegano!')
+
+ }if(alimento ==2 || alimento ==4 ||alimento ==6){
+     alert('Você pode ser vegano!')
+ }if(alimento ==2 || alimento ==4 || alimento ==6 || alimento ==7)
+ alert('Você pode ser vegetariano!')
+
+
+}
+</script>

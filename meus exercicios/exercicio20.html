@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escolhendo Fruta Preferencias</title>
+</head>
+<body>
+    
+
+    <h1>Analisando Frutas para comer</h1>
+
+    Digite o nome da fruta: <input type="text" id="fruta">
+    <button onclick="analisar()">Analisar</button>
+
+</body>
+</html>
+<script>
+function analisar(){
+var frutas = (fruta.value);
+
+if(frutas == 'abacaxi' || frutas =='uva'){
+
+    alert(`Sim, vai comer ${frutas} `)
+}else{
+    alert(`A fruta ${frutas} ela não come.`)
+}
+
+}
+
+</script>
