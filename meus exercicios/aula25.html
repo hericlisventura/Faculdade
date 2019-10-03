@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    digite algo: <input type="text" id="frase" onkeyup="analisar()"><br>
+    <div>
+        quantas letras?<b id="vLetras"></b><br>
+        Começa com 'a'<b id="vcA"></b><br>
+        Termina com 'C'<b id="tcC"></b> <br>
+        Contém '@'? <b id="vcAr"></b><br>
+        Está vazia? <b id="vsV"></b><br>
+
+    </div>
+</body>
+</html>
+<script>
+function analisar(){
+    var valorFrase = frase.value
+    vLetras.innerHTML = valorFrase.length;
+    vcA.innerHTML = valorFrase.startsWith('a');
+    tcC.innerHTML = valorFrase.endsWith('c');
+    vcAr.innerHTML =valorFrase.indexOf('@') >=0;
+    vsV.innerHTML = valorFrase.length == 0;
+}
+
+
+</script>

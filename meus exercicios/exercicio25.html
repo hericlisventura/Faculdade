@@ -30,14 +30,15 @@
     function calcular() {
         var veiculos = (transportes.value);
         var demora = (distancia.value);
-        if (demora == 10 && veiculos == 3 ||demora == 10 &&  veiculos == 2 || demora == 10 && veiculos == 1) {
+        if (demora <= 10 && veiculos <= 3 || demora == 10 && veiculos <= 2 || demora <= 10 && veiculos == 1) {
             alert('Ta Tranks!')
 
         } if (demora > 10 && veiculos == 3) {
-            alert('É.. um pouco cansado');
+            alert('É.. um pouco cansado')
 
-        } if (demora > 10 && veiculos == 2 ||demora > 10 && veiculos == 1) {
+        } if (demora > 10 && veiculos == 2 || demora > 10 && veiculos == 1) {
             alert('Bem cansado!')
+            
         } if (demora > 10 && veiculos == 4) {
             alert('Vish... Só o pó!')
         }
