@@ -1,0 +1,64 @@
+body{
+    background-image: url('../Imagens/fundoBody4.jpg');
+    background-size: 100%;
+/* background-color:deepskyblue; */
+}
+
+.cabecalho
+{
+    width: 99vw;
+    height: 49vh;
+    font-size:265%;
+    color: black;
+    border-bottom: solid;
+}  
+ .divLogo
+{   
+    margin-left: 10%;
+    float: left;
+    width:25vw;
+    height:47vh;
+    border: solid;
+    border-color: green;
+    border-radius: 10px 20px 30px 40px;
+}   
+ .logo
+{   
+  
+    float: left;
+    width: 20vw;
+    height:35vh;
+} 
+ .nomeEmpresa
+{
+    color: Yellow;
+    float: center;
+}
+ .Slogan{
+     float: left;
+     margin-top:10%;
+     margin-left: 5%;
+ }
+ .formulario
+ 
+{   margin-top:10%;
+    margin-left: 25%;
+    padding: 5%;
+    float:left;
+    width: 35vw;
+    height: 45vh;
+    text-align: center;
+    font-size: 200%;
+    border: solid;
+    border-radius: 10px 20px 30px 40px;
+
+}
+.rodape
+{   margin-top:50%;
+    border-top:solid;
+    width: 100vw;
+    height:10vh;
+    text-align: center;
+    font-size:40px;
+    color: yellow;
+}
